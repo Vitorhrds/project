@@ -1,11 +1,150 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+	android:background="#000000"
+	android:orientation="vertical"
+    android:gravity="left">
 
-    <TextView
-        android:text="@string/hello_world"
+    <EditText
+		android:maxLength="100"
+		android:id="@+id/etCalc"
+		android:layout_weight="1.0"
+		android:text=""
+		android:focusableInTouchMode="false"
+		android:background="#000000"
+		android:textSize="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+	<EditText
+		android:maxLength="100"
+		android:id="@+id/etCalc2"
+		android:layout_weight="1.0"
+		android:text=""
+		android:focusableInTouchMode="false"
+		android:background="#000000"
+		android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#000000"
+		android:orientation="vertical"
+		android:gravity="center">
+
+	<TextView
+		android:id="@+id/tvPreview"
+		android:layout_weight="1.0"
+		android:gravity="right"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:textSize="30dp" />
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+		<Button
+			android:onClick="button1"
+			android:id="@+id/bt1"
+			android:layout_width="match_parent"
+			android:layout_height="90dp"
+			android:text="1" />
+		<Button
+			android:id="@+id/bt2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="2" />
+		<Button
+			android:id="@+id/bt3"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="3" />
+		<Button
+			android:onClick="buttonC"
+			android:id="@+id/btC"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="C" />
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+		<Button
+			android:id="@+id/bt4"
+			android:layout_width="match_parent"
+			android:layout_height="90dp"
+			android:text="4" />
+		<Button
+			android:id="@+id/bt5"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="5" />
+		<Button
+			android:id="@+id/bt6"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="6" />
+		<Button
+			android:id="@+id/btX"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="X" />
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+		<Button
+			android:id="@+id/bt7"
+			android:layout_width="match_parent"
+			android:layout_height="90dp"
+			android:text="7" />
+		<Button
+			android:id="@+id/bt8"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="8" />
+		<Button
+			android:id="@+id/bt9"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="9" />
+		<Button
+			android:id="@+id/btdivide"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="÷" />
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+		<Button
+			android:id="@+id/bt0"
+			android:layout_width="match_parent"
+			android:layout_height="90dp"
+			android:text="0" />
+		<Button
+			android:id="@+id/btmenos"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent"
+			android:text="-" />
+		<Button
+			android:onClick="buttonMais"
+			android:id="@+id/btmais"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent"
+			android:text="+"/>
+		<Button
+			android:onClick="buttonIgual"
+			android:id="@+id/btigual"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent"
+			android:text="=" />
+	</TableRow>
+
+</TableLayout>
 </LinearLayout>
